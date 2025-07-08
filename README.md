@@ -50,14 +50,14 @@ This guide explains how to integrate the Netmera Cordova Plugin into your projec
    ```
    
 ## ✅ Step 2: Initialize Netmera Plugin
-Import the Netmera Plugin in your application:
+1. Import the Netmera Plugin in your application:
 
    ```bash
    import { NetmeraPlugin } from '@awesome-cordova-plugins/netmera/ngx';
-    ```
+   ```
 
-In your constructor, initialize the plugin:
+2. In your constructor, initialize the plugin:
    
    ```bash
    constructor(private netmera: NetmeraPlugin) {}
-    ```
+   ```
