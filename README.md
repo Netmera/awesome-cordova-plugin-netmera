@@ -18,13 +18,13 @@ This guide explains how to integrate the Netmera Cordova Plugin into your projec
    "@awesome-cordova-plugins/netmera": "git@github.com:Netmera/awesome-cordova-plugin-netmera.git"
    ```
 
-Run the following command to install the dependencies:
+3. Run the following command to install the dependencies:
 
    ```bash
    npm install
    ```
 
-Sample package.json snippet:
+   Sample package.json snippet:
 
    ```bash
    "dependencies": {
@@ -34,7 +34,7 @@ Sample package.json snippet:
    }
    ```
 
-Add the required preferences to your config.xml file:
+4. Add the required preferences to your config.xml file:
 
    ```bash
    <preference name="NetmeraKey" value="example-key" />
