@@ -14,50 +14,50 @@ This guide explains how to integrate the Netmera Cordova Plugin into your projec
 
 2. In your package.json, add the following dependency for the wrapper:
 
-```bash
-"@awesome-cordova-plugins/netmera": "git@github.com:Netmera/awesome-cordova-plugin-netmera.git"
-```
+   ```bash
+   "@awesome-cordova-plugins/netmera": "git@github.com:Netmera/awesome-cordova-plugin-netmera.git"
+   ```
 
 Run the following command to install the dependencies:
 
-```bash
-npm install
-```
+   ```bash
+   npm install
+   ```
 
 Sample package.json snippet:
 
-```bash
-"dependencies": {
-  ...
-  "@awesome-cordova-plugins/netmera": "git@github.com:Netmera/awesome-cordova-plugin-netmera.git",
-  ...
-}
-```
+   ```bash
+   "dependencies": {
+     ...
+     "@awesome-cordova-plugins/netmera": "git@github.com:Netmera/awesome-cordova-plugin-netmera.git",
+     ...
+   }
+   ```
 
 Add the required preferences to your config.xml file:
 
-```bash
-<preference name="NetmeraKey" value="example-key" />
-<preference name="NetmeraBaseUrl" value="example-base-url" />
-<preference name="FcmKey" value="example-fcm-key" />
-<preference name="AppGroupName" value="group.com.example.groupname" />
-
-<edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
-  ...
-  <application android:name="com.netmera.cordova.plugin.NetmeraApplication" />
-  ...
-</edit-config>
-```
+   ```bash
+   <preference name="NetmeraKey" value="example-key" />
+   <preference name="NetmeraBaseUrl" value="example-base-url" />
+   <preference name="FcmKey" value="example-fcm-key" />
+   <preference name="AppGroupName" value="group.com.example.groupname" />
+   
+   <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
+     ...
+     <application android:name="com.netmera.cordova.plugin.NetmeraApplication" />
+     ...
+   </edit-config>
+   ```
    
 ## ✅ Step 2: Initialize Netmera Plugin
 Import the Netmera Plugin in your application:
 
-```bash
-import { NetmeraPlugin } from '@awesome-cordova-plugins/netmera/ngx';
- ```
+   ```bash
+   import { NetmeraPlugin } from '@awesome-cordova-plugins/netmera/ngx';
+    ```
 
 In your constructor, initialize the plugin:
-
-```bash
-constructor(private netmera: NetmeraPlugin) {}
- ```
+   
+   ```bash
+   constructor(private netmera: NetmeraPlugin) {}
+    ```
